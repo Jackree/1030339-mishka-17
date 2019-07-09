@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Иванов](https://up.htmlacademy.ru/adaptive/17/user/1030339).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/adaptive/17/user/23249).
 
 ---
 
