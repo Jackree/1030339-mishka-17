@@ -4,8 +4,7 @@
 }
 
 .promo__title {
-  font-weight: bold;
-  font-size: 24px;
+  @include block-title;
 }
 
 .promo__button {
