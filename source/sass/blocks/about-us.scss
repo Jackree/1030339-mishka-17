@@ -1,0 +1,13 @@
+.about-us__title {
+  @include block-title;
+}
+
+.about-us__list {
+  list-style: none;
+}
+
+.about-us__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}

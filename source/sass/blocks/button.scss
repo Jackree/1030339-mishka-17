@@ -1,0 +1,20 @@
+.button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  border: 2px solid $text-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
