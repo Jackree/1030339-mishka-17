@@ -1,9 +1,34 @@
 .site-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  padding-top: 30px;
+  padding-left: 77px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-list__link {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: -1;
+  }
 }
