@@ -1,8 +1,12 @@
 .button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $text-color;
+  text-align: center;
   text-transform: uppercase;
 
   border: 2px solid $text-color;
