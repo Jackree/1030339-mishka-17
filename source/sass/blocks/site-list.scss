@@ -25,10 +25,18 @@
     flex-direction: row;
     order: 1;
   }
+
+  .site-list__link {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     order: -1;
+  }
+
+  .site-list__link {
+    font-size: 17px;
   }
 }
