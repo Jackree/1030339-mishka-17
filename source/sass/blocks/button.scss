@@ -1,12 +1,15 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  color: $text-color;
   text-align: center;
+  color: $text-color;
   text-transform: uppercase;
 
   border: 2px solid $text-color;

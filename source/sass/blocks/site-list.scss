@@ -15,6 +15,9 @@
 }
 
 .site-list__link {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -28,6 +31,7 @@
 
   .site-list__link {
     font-size: 15px;
+    width: auto;
   }
 }
 

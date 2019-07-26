@@ -24,11 +24,6 @@
   padding-bottom: 33px;
   padding-left: 30px;
 
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
-
   &--interior {
     background-color: $primary-color;
   }
@@ -36,6 +31,15 @@
   &--toy {
     background-color: #56c3b2;
   }
+}
+
+.promo__button-text {
+  width: 120px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +59,10 @@
 
   .promo__button {
     width: 50%;
+  }
 
+  .promo__button-text {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
   }
