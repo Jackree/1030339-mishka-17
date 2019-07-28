@@ -1,18 +1,30 @@
 .promo {
-  background-color: #fbfbfb;
+  position: relative;
+
+  margin-bottom: 25px;
+
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .promo__title {
-  @include block-title;
+  padding-top: 75px;
+  padding-bottom: 119px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .promo__button {
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
+  padding-top: 28px;
+  padding-right: 160px;
+  padding-bottom: 33px;
+  padding-left: 30px;
 
   &--interior {
     background-color: $primary-color;
@@ -20,5 +32,91 @@
 
   &--toy {
     background-color: #56c3b2;
+  }
+}
+
+.promo__button-text {
+  width: 120px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/hero-tablet@1x.jpg");
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: 30px 0;
+      background-size: 761px 24px;
+    }
+  }
+
+  .promo__title {
+    padding-bottom: 385px;
+  }
+
+  .promo__wrapper {
+    flex-direction: row;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .promo__button {
+    width: 334px;
+  }
+
+  .promo__button-text {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+
+      width: 100%;
+      height: 34px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 1150px 34px;
+    }
+  }
+
+  .promo__title {
+    padding-bottom: 365px;
+  }
+
+  .promo__wrapper {
+    width: 1050px;
+
+    &::after {
+      background-size: 0;
+    }
+  }
+
+  .promo__button {
+    width: 525px;
   }
 }

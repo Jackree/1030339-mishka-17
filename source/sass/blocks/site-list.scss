@@ -1,9 +1,49 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.site-list__item {
+  padding-top: 30px;
+  padding-bottom: 32px;
+
+  border-bottom: 1px solid #ececec;
+}
+
 .site-list__link {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 47px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    order: 1;
+  }
+
+  .site-list__link {
+    width: auto;
+
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: -1;
+  }
+
+  .site-list__link {
+    font-size: 17px;
+  }
 }

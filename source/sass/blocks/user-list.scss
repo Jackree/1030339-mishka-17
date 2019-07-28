@@ -1,9 +1,36 @@
 .user-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-list__item {
+  padding-top: 30px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 .user-list__link {
+  display: block;
+  width: 260px;
+  padding-left: 47px;
+
+  margin: 0 auto;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+    width: 350px;
+  }
+
+  .user-list__link {
+    width: auto;
+  }
 }
