@@ -1,0 +1,26 @@
+.offer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.offer-list__item {
+  margin-right: 60px;
+}
+
+.offer-list__link {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+@media (min-width: $desktop-width) {
+  .offer-list {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    margin-top: 18px;
+  }
+}

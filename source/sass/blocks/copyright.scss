@@ -1,6 +1,16 @@
 .copyright__link {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
