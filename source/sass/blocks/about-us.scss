@@ -12,20 +12,84 @@
 }
 
 .about-us__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .about-us__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-top: 65px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 65px;
-  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--flower {
+    &::before {
+      background-image: url("../img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+      left: 9px;
+    }
+  }
+
+  &--money {
+    &::before {
+      background-image: url("../img/icon-feature-money.svg");
+      width: 47px;
+      height: 27px;
+      left: 0;
+    }
+  }
+
+  &--heart {
+    &::before {
+      background-image: url("../img/icon-feature-heart.svg");
+      width: 34px;
+      height: 27px;
+      left: 8px;
+    }
+  }
+
+  &--clew {
+    &::before {
+      background-image: url("../img/icon-feature-ball.svg");
+      width: 35px;
+      height: 34px;
+      left: 3px;
+    }
+  }
+
+  &--rocket {
+    &::before {
+      background-image: url("../img/icon-feature-rocket.svg");
+      width: 55px;
+      height: 23px;
+      left: -7px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      background-image: url("../img/icon-feature-gift.svg");
+      width: 33px;
+      height: 32px;
+      left: 2px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -46,8 +110,10 @@
 
   .about-us__item {
     width: 300px;
+
     font-size: 20px;
     line-height: 22px;
+    margin-top: 60px;
 
     &--flower {
       order: 1;

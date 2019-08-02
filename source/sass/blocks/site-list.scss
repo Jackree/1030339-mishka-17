@@ -28,19 +28,50 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
-    order: 1;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 18px;
+    z-index: 1;
+  }
+
+  .site-list__item {
+    border: 0;
+    padding: 0;
+    margin-right: 37px;
   }
 
   .site-list__link {
     width: auto;
-
+    padding-left: 0;
     font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
+    position: static;
     order: -1;
+    margin-top: 0;
+  }
+
+  .site-list__item {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin-right: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-right: 1px solid #ececec;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
   }
 
   .site-list__link {
