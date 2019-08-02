@@ -51,8 +51,8 @@
     content: "";
     position: absolute;
 
-    opacity: 0.5;
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
 
   &--interior {
@@ -151,10 +151,6 @@
 
   .promo__wrapper {
     width: 1050px;
-
-    &::after {
-      background-size: 0;
-    }
   }
 
   .promo__button {
@@ -164,16 +160,18 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .promo {
-    background-image: url("/../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     .promo {
-      background-image: url("/../img/hero-tablet@2x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-desktop@2x.jpg");
+    .promo {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }

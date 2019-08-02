@@ -128,8 +128,8 @@
   }
 
   .best-product__image {
-    width: 333px;
-    height: 404px;
+    width: 100%;
+    height: auto;
   }
 
   .best-product__price {
@@ -167,11 +167,6 @@
     width: 525px;
     height: 636px;
     top: 0;
-  }
-
-  .best-product__image {
-    width: 525px;
-    height: 636px;
   }
 
   .best-product__price {

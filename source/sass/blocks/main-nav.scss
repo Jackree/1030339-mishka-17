@@ -38,8 +38,9 @@
 
   .main-nav__logo-wrapper {
     margin-right: auto;
-    border: 0;
     padding-bottom: 20px;
+
+    border: 0;
   }
 
   .main-nav__logo {
@@ -75,7 +76,6 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1050px;
-    justify-content: space-between;
   }
 
   .main-nav__logo {
@@ -84,10 +84,11 @@
   }
 
   .main-nav__logo-wrapper {
-    width: 300px;
     display: flex;
     justify-content: center;
+    width: 149px;
     margin: 0;
+    margin-left: 75px;
     padding-top: 9px;
     padding-bottom: 7px;
   }
