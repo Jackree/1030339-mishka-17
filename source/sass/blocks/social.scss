@@ -1,6 +1,7 @@
 .social__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 180px;
   margin: 0 auto;
   padding: 0;
@@ -10,4 +11,15 @@
   padding-left: 17px;
 
   list-style: none;
+}
+
+.social__link {
+  &:hover .social__logo,
+  &:focus .social__logo {
+    fill: #46c1ae;
+  }
+
+  &:active .social__logo {
+    opacity: 0.3;
+  }
 }
