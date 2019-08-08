@@ -102,6 +102,11 @@
   }
 }
 
+.feedback__button {
+  padding-left: 80px;
+  padding-right: 81px;
+}
+
 @media (min-width: $tablet-width) {
   .feedback {
     margin-bottom: 61px;

@@ -62,6 +62,7 @@
 }
 
 .contacts__button {
+  width: 260px;
   margin: 0 auto;
   padding-right: 52px;
   padding-left: 52px;
@@ -73,7 +74,7 @@
   }
 
   .contacts__items {
-    flex-direction: row
+    flex-direction: row;
   }
 
   .contacts__title {
@@ -109,6 +110,11 @@
     width: 222px;
   }
 
+  .contacts__button {
+    width: 231px;
+    padding-left: 38px;
+    padding-right: 39px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -156,8 +162,6 @@
   }
 
   .contacts__button {
-    padding-left: 39px;
-    padding-right: 39px;
     position: absolute;
     bottom: 27px;
     left: 175px;

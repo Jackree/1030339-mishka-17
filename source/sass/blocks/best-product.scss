@@ -80,7 +80,8 @@
 }
 
 .best-product__button {
-  flex-grow: 1;
+  padding-left: 83px;
+  padding-right: 83px;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,6 +136,11 @@
   .best-product__price {
     font-size: 20px;
     margin-top: 55px;
+  }
+
+  .best-product__button {
+    padding-left: 101px;
+    padding-right: 101px;
   }
 }
 
