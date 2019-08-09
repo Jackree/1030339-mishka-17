@@ -67,6 +67,84 @@
     <div class="page-title">
       <h1 class="main-title">Вязание на заказ</h1>
     </div>
+    <section class="request">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <p class="request__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+        мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="request__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="request__handwork">
+          <div class="request__handwork-wrapper">
+            <legend class="request__legend">Тип</legend>
+            <ul class="request__handwork-list">
+              <li class="request__handwork-item">
+                <input class="request__handwork-radio" type="radio" name="handwork" id="handwork-interior"
+                  value="interior">
+                <label class="request__label" for="handwork-interior">Аксессуар для интерьера</label>
+              </li>
+              <li class="request__handwork-item">
+                <input class="request__handwork-radio" type="radio" name="handwork" id="handwork-toy" value="toy">
+                <label class="request__label" for="handwork-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="request__color">
+          <div class="requst__color-wrapper">
+            <legend class="request__legend">Цвет</legend>
+            <ul class="request__color-list">
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-white" value="white">
+                <label class="request__label" for="color-white">Белый</label>
+              </li>
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-gray" value="gray">
+                <label class="request__label" for="color-gray">Серый</label>
+              </li>
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-tiffany" value="tiffany">
+                <label class="request__label" for="color-tiffany">«Тиффани»</label>
+              </li>
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-black" value="black">
+                <label class="request__label" for="color-black">Черный</label>
+              </li>
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-pink" value="pink">
+                <label class="request__label" for="color-pink">Розовый</label>
+              </li>
+              <li class="request__color-item">
+                <input class="request__color-checkbox" type="checkbox" name="color" id="color-orange" value="orange">
+                <label class="request__label" for="color-orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="request__user">
+          <div class="request__user-wrapper">
+            <legend class="request__legend">ФИО</legend>
+            <ul class="request__user-list">
+              <li class="request__user-item">
+                <label for="user-name">Имя:</label>
+                <input class="request__user-text" type="text" name="user-name" id="user-name"
+                  placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="request__user-item">
+                <label for="user-surname">Фамилия:</label>
+                <input class="request__user-text" type="text" name="user-surname" id="user-surname"
+                  placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="request__user-item">
+                <label for="user-patronymic">Отчество:</label>
+                <input class="request__user-text" type="text" name="user-patronymic" id="user-patronymic"
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <input type="submit" value="aaa">
+      </form>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
