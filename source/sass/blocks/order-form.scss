@@ -1,0 +1,90 @@
+.order-form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.order-form__legend {
+  position: relative;
+
+  display: block;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 1px;
+
+      width: 198px;
+      height: 1px;
+
+      background-color: #62d1ba;
+    }
+  }
+}
+
+.order-form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order-form__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-form__description {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__label {
+    font-size: 19px;
+  }
+
+  .order-form__wrapper {
+    flex-direction: row;
+    align-items: center;
+    width: 668px;
+  }
+
+  .order-form__description {
+    margin-bottom: 0;
+
+    line-height: 30px;
+  }
+
+  .order-form__button {
+    order: -1;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__wrapper {
+    width: 700px;
+  }
+}
