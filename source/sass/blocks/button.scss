@@ -12,13 +12,14 @@
   color: $text-color;
   text-transform: uppercase;
   background-color: #ffffff;
+  cursor: pointer;
 
   border: 2px solid $text-color;
 
   &:hover,
   &:focus {
     color: #ffffff;
-
+    border: 2px solid $text-color;
     background-color: $text-color;
   }
 
