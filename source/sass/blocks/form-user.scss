@@ -3,11 +3,12 @@
   flex-direction: column;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .form-user__legend {
-  margin-bottom: 38px;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .form-user__list {
@@ -18,7 +19,7 @@
 .form-user__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -54,8 +55,12 @@
 
 @media (min-width: $tablet-width) {
   .form-user {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .form-user__legend {
+    padding-top: 18px;
   }
 
   .form-user__wrapper {
@@ -63,13 +68,8 @@
     flex-direction: row;
   }
 
-  .form-user__legend {
-    padding-top: 18px;
-    padding-right: 127px;
-  }
-
   .form-user__list {
-    width: 700px;
+    width: 500px;
   }
 
   .form-user__item {
@@ -94,5 +94,9 @@
   .form-user__legend {
     padding-left: 62px;
     padding-right: 74px;
+  }
+
+  .form-user__list {
+    width: 700px;
   }
 }

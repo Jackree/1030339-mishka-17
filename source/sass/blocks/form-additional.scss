@@ -1,5 +1,5 @@
 .form-additional {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .form-additional__wrapper {
@@ -10,12 +10,13 @@
 }
 
 .form-additional__legend {
-  margin-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .form-additional__textarea {
-  padding-top: 18px;
-  padding-left: 17px;
+  padding-top: 15px;
+  padding-left: 15px;
 
   font-size: 17px;
   line-height: 18px;
@@ -51,7 +52,7 @@
   }
 
   .form-additional__legend {
-    padding-right: 125px;
+    padding-top: 17px;
   }
 
   .form-additional__textarea {
@@ -64,11 +65,6 @@
 @media (min-width: $desktop-width) {
   .form-additional__wrapper {
     width: 1050px;
-  }
-
-  .form-additional__legend {
-    padding-left: 62px;
-    padding-right: 74px;
   }
 
   .form-additional__textarea {

@@ -1,0 +1,28 @@
+.form-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    background-color: #f1f1f1;
+  }
+
+  .form-contacts__wrapper {
+    flex-direction: row;
+    width: 668px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts__wrapper {
+    width: 1050px;
+  }
+}

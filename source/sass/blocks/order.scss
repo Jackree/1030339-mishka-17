@@ -5,7 +5,7 @@
 
 .order__description {
   width: 242px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 13px;
   line-height: 24px;
   color: $text-color;
@@ -14,13 +14,14 @@
 @media (min-width: $tablet-width) {
   .order__wrapper {
     width: 668px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .order__description {
     width: 612px;
     font-size: 17px;
     line-height: 30px;
+    padding-top: 40px;
   }
 }
 
