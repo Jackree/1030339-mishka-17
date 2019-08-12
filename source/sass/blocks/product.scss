@@ -2,7 +2,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   border: 1px solid #ececec;
 }
@@ -25,6 +25,7 @@
 .product__title {
   width: 200px;
   margin: 0;
+  margin-bottom: 5px;
 
   font-weight: bold;
   font-size: 17px;
@@ -51,7 +52,7 @@
 
 .product__description {
   width: 200px;
-
+  margin-top: 0;
   font-size: 13px;
   color: $text-color;
 }
@@ -60,8 +61,8 @@
   display: flex;
   justify-content: space-between;
   width: 205px;
-  padding-top: 20px;
-  padding-bottom: 27px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   border-top: 1px solid #ececec;
 }
 
@@ -90,6 +91,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 668px;
+    margin-bottom: 53px;
   }
 
   .product__link-image {
@@ -138,5 +140,7 @@
 
   .product__price-wrapper {
     width: 256px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

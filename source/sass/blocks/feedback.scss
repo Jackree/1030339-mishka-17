@@ -15,8 +15,8 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: 26px 0;
-    background-size: contain;
+    background-position: 10px 0;
+    background-size: 300px 6px;
   }
 }
 
@@ -120,7 +120,7 @@
     &::after {
       height: 15px;
 
-      background-position: 0 0;
+      background-size: 740px 15px;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

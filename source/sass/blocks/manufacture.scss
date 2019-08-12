@@ -1,3 +1,7 @@
+.manufacture {
+  padding-bottom: 17px;
+}
+
 .manufacture__wrapper {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,7 @@
 
   width: 183px;
   margin-top: 25px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   margin-left: 34px;
   padding-left: 57px;
 
@@ -39,7 +43,7 @@
 
   width: 100%;
   height: 150px;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
 }
 
 .manufacture__video-button {
@@ -88,6 +92,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .manufacture {
+    padding-bottom: 0;
+  }
+
   .manufacture__wrapper {
     width: 668px;
   }
@@ -103,16 +111,23 @@
   }
 
   .manufacture__title {
-    width: 306px;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
     margin-left: 40px;
-
+    padding-left: 68px;
     font-size: 20px;
     line-height: 24px;
+
+    &::before {
+      top: -6px;
+    }
   }
 
   .manufacture__description {
     width: 581px;
     margin-left: 40px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -125,6 +140,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .manufacture {
+    padding-bottom: 25px;
+  }
+
   .manufacture__wrapper {
     position: relative;
 
@@ -143,13 +162,21 @@
   .manufacture__title {
     width: 148px;
     margin-left: 0;
+    margin-top: 35px;
     padding-top: 61px;
+    margin-bottom: 35px;
     padding-left: 0;
+
+    &::before {
+      top: 10px;
+    }
   }
 
   .manufacture__description {
-    width: 222px;
+    width: 225px;
     margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 45px;
   }
 
   .manufacture__button {

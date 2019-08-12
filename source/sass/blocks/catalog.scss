@@ -1,3 +1,7 @@
+.catalog {
+  padding-top: 10px;
+}
+
 .catalog__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -13,12 +17,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 45px;
+  }
+
   .catalog__wrapper {
     width: 668px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 95px;
+  }
+
   .catalog__list {
     flex-direction: row;
   }

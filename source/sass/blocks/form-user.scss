@@ -55,7 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .form-user {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 20px;
   }
 
@@ -74,6 +74,7 @@
 
   .form-user__item {
     flex-direction: row;
+    margin-bottom: 14px;
   }
 
   .form-user__label {

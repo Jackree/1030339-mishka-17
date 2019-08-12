@@ -21,7 +21,7 @@ var cartButton = document.querySelectorAll('.cart-button');
 var popupCart = document.querySelector('.popup-cart');
 var cartFormButton = document.querySelector('.cart-form__button');
 
-for (i = 0; i < cartButton.length; i++) {
+for (var i = 0; i < cartButton.length; i++) {
   cartButton[i].addEventListener('click', function (evt) {
     evt.preventDefault();
     popupCart.classList.add('popup-cart--opened');

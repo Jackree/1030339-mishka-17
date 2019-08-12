@@ -37,5 +37,7 @@
 @media (min-width: $tablet-width) {
   .social__list {
     border-bottom: 0;
+    width: 300px;
+    padding-top: 20px;
   }
 }

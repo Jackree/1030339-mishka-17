@@ -1,3 +1,7 @@
+.order {
+  padding-bottom: 15px;
+}
+
 .order__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -12,26 +16,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order {
+    padding-bottom: 0;
+  }
+
   .order__wrapper {
     width: 668px;
     margin-bottom: 75px;
+    padding-top: 30px;
   }
 
   .order__description {
     width: 612px;
     font-size: 17px;
     line-height: 30px;
-    padding-top: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order__wrapper {
     width: 1050px;
+    padding-top: 95px;
   }
 
   .order__description {
-    width: 672px;
+    width: 700px;
     margin: 0 auto;
   }
 }
