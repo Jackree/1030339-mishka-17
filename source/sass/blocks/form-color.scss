@@ -1,0 +1,118 @@
+.form-color__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-color__legend {
+  margin-bottom: 35px;
+}
+
+.form-color__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-color__item {
+  margin-bottom: 43px;
+  display: flex;
+  align-items: center;
+}
+
+.form-color__label {
+  display: block;
+  position: relative;
+  padding-left: 64px;
+  cursor: pointer;
+}
+
+.form-color__checkbox + .form-color__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $text-color;
+}
+
+.form-color__checkbox:checked + .form-color__label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  left: 10px;
+  top: 3px;
+  background-color: transparent;
+  background-image: url("../img/icon-tick.svg");
+  background-size: cover;
+}
+
+.form-color__checkbox + .form-color__label:hover::before,
+.form-color__checkbox:focus + .form-color__label::before {
+  border-color: #62d1ba;
+}
+
+.form-color__checkbox + .form-color__label:active::before {
+  border-color: rgba($text-color, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .form-color {
+    background-color: #f1f1f1;
+    padding-top: 65px;
+    padding-bottom: 10px;
+  }
+
+  .form-color__wrapper {
+    width: 668px;
+    flex-direction: row;
+  }
+
+  .form-color__list {
+    width: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-color__item {
+    width: 220px;
+    margin-bottom: 58px;
+    margin-right: 20px;
+  }
+
+  .form-color__label {
+    padding-left: 80px;
+  }
+
+  .form-color__checkbox + .form-color__label::before {
+    width: 53px;
+    height: 53px;
+    top: -15px;
+  }
+
+  .form-color__checkbox:checked + .form-color__label::after {
+    width: 33px;
+    height: 23px;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-color__wrapper {
+    width: 1050px;
+  }
+
+  .form-color__list {
+    width: 875px;
+    justify-content: flex-start;
+  }
+
+  .form-color__item {
+    margin-right: 43px;
+  }
+}

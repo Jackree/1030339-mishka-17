@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   font-weight: bold;
   font-size: 17px;
@@ -11,13 +11,15 @@
   text-align: center;
   color: $text-color;
   text-transform: uppercase;
+  background-color: #ffffff;
+  cursor: pointer;
 
   border: 2px solid $text-color;
 
   &:hover,
   &:focus {
     color: #ffffff;
-
+    border: 2px solid $text-color;
     background-color: $text-color;
   }
 

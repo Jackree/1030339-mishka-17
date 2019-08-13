@@ -54,7 +54,7 @@
 @media (min-width: $tablet-width) {
   .user-list {
     flex-direction: row;
-    width: 350px;
+    width: 349px;
     margin-left: auto;
   }
 
@@ -78,10 +78,10 @@
 
   .user-list__link {
     width: auto;
-    padding-left: 85px;
+    padding-left: 81px;
 
     &--search {
-      padding-right: 40px;
+      padding-right: 44px;
       padding-left: 40px;
     }
   }

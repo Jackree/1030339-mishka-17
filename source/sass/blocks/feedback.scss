@@ -1,0 +1,246 @@
+.feedback {
+  position: relative;
+
+  margin-bottom: 35px;
+  padding-bottom: 51px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 10px 0;
+    background-size: 300px 6px;
+  }
+}
+
+.feedback__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.feedback__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feedback__text {
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  color: $text-color;
+}
+
+.feedback__user-wrapper {
+  margin-bottom: 30px;
+}
+
+.feedback__user-name {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.feedback__user-nickname {
+  margin: 0;
+
+  font-size: 17px;
+  color: $text-color;
+}
+
+.feedback__controls {
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.feedback__toggle {
+  flex-grow: 1;
+  padding: 26px 42px 26px 38px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 37px;
+  background-size: 50px 26px;
+  border: solid 1px #ececec;
+  border-right: 0;
+  cursor: pointer;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    border-right: solid 1px #ececec;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.feedback__button {
+  padding-left: 80px;
+  padding-right: 81px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-bottom: 61px;
+    padding-bottom: 53px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px 457px;
+
+    &::after {
+      height: 15px;
+
+      background-size: 740px 15px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
+  .feedback__wrapper {
+    position: relative;
+
+    width: 668px;
+    padding-top: 76px;
+    padding-bottom: 50px;
+  }
+
+  .feedback__title {
+    margin-bottom: 49px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__text {
+    margin-bottom: 59px;
+
+    font-size: 17px;
+  }
+
+  .feedback__user-name {
+    font-size: 18px;
+  }
+
+  .feedback__controls {
+    position: absolute;
+    right: 0;
+    bottom: 43px;
+  }
+
+  .feedback__toggle {
+    padding-right: 48px;
+
+    background-position: center;
+    border: 0;
+  }
+
+  .feedback__button {
+    position: absolute;
+    top: 79px;
+    right: -2px;
+
+    padding-right: 39px;
+    padding-left: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding-bottom: 90px;
+
+    background-image: none;
+
+    &::after {
+      background-image: none;
+    }
+  }
+
+  .feedback__wrapper {
+    position: relative;
+
+    width: 1050px;
+    padding-top: 70px;
+    padding-bottom: 64px;
+    padding-left: 175px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px 457px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -91px;
+      left: 0;
+
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: 26px 0;
+      background-size: contain;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
+  .feedback__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .feedback__text {
+    width: 770px;
+    margin-bottom: 38px;
+  }
+
+  .feedback__user-name {
+    margin-bottom: 5px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .feedback__controls {
+    bottom: 61px;
+  }
+
+  .feedback__button {
+    right: 0;
+  }
+}
