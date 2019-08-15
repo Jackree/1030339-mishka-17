@@ -50,6 +50,10 @@
   &:hover {
     border-color: rgba($text-color, 0.3);
   }
+
+  &:active {
+    border-color: $primary-color;
+  }
 }
 
 .cart-form__input:checked + .cart-form__label {

@@ -8,8 +8,8 @@
 }
 
 .site-list__item {
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -63,6 +63,7 @@
     position: static;
     order: -1;
     margin-top: 0;
+    width: 375px;
   }
 
   .site-list__item {
