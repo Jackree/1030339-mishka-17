@@ -63,6 +63,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-additional {
+    margin-bottom: 47px;
+  }
+
   .form-additional__wrapper {
     width: 1050px;
   }

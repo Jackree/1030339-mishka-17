@@ -18,12 +18,13 @@
 @media (min-width: $tablet-width) {
   .order {
     padding-bottom: 0;
+    margin-bottom: -10px;
   }
 
   .order__wrapper {
     width: 668px;
     margin-bottom: 75px;
-    padding-top: 30px;
+    padding-top: 23px;
   }
 
   .order__description {
@@ -34,9 +35,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order {
+    margin-bottom: -30px;
+  }
+
   .order__wrapper {
     width: 1050px;
-    padding-top: 95px;
+    padding-top: 88px;
   }
 
   .order__description {
