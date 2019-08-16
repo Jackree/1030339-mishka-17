@@ -186,6 +186,20 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3046474320028!2d30.322102783669248!3d59.938625097734494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sru!2sru!4v1565113837356!5m2!1sru!2sru"
             width="320" height="457" allowfullscreen=""></iframe>
+          <div class="contacts__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+                height="457" alt="Как нас найти">
+            </picture>
+          </div>
         </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
       </div>
