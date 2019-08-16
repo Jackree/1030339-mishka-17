@@ -74,7 +74,6 @@
 
   .form-user__item {
     flex-direction: row;
-    margin-bottom: 25px;
   }
 
   .form-user__label {
@@ -84,6 +83,7 @@
   .form-user__text-input {
     font-size: 19px;
     padding-left: 17px;
+    line-height: 20px;
   }
 }
 
