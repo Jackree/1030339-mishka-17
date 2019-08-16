@@ -165,7 +165,9 @@
           <div class="form-contacts__wrapper form-phone">
             <h2 class="order-form__legend form-phone__legend">Тел</h2>
             <div class="form-phone__wrapper">
-              <input class="form-phone__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required="">
+              <label class="visually-hidden" for="phone_input">Номер телефона</label>
+              <input class="form-phone__input" type="tel" name="phone" id="phone_input" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                required="">
               <svg class="form-phone__icon" width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -174,7 +176,9 @@
           <div class="form-contacts__wrapper form-email">
             <h2 class="order-form__legend form-email__legend">E-mail</h2>
             <div class="form-email__wrapper">
-              <input class="form-email__input" type="email" name="email" placeholder="Ваш Email*" required="">
+              <label class="visually-hidden" for="email_input">Электронная почта</label>
+              <input class="form-email__input" type="email" name="email" id="email_input" placeholder="Ваш Email*"
+                required="">
               <svg class="form-email__icon" width="32" height="32">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -185,7 +189,8 @@
         <div class="order-form__section form-additional">
           <div class="form-additional__wrapper">
             <h2 class="order-form__legend form-additional__legend">Доп</h2>
-            <textarea class="form-additional__textarea" name="additional-message"
+            <label class="visually-hidden" for="additional-message">Дополнительное сообщение к заказу</label>
+            <textarea class="form-additional__textarea" name="additional-message" id="additional-message"
               placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
         </div>
@@ -233,7 +238,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTMLAcademy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Разработано HTMLAcademy">
           <p class="copyright__text">Разработано</p>
           <svg class="copyright__logo" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>

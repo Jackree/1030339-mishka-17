@@ -60,6 +60,14 @@
   border-color: rgba($text-color, 0.3);
 }
 
+.form-color__checkbox:disabled + .form-color__label {
+  opacity: 0.2;
+}
+
+.form-color__checkbox:disabled + .form-color__label:hover::before {
+  border-color: $text-color;
+}
+
 @media (min-width: $tablet-width) {
   .form-color {
     background-color: #f1f1f1;

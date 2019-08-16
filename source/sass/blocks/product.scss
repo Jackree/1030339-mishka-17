@@ -5,6 +5,15 @@
   margin-bottom: 32px;
 
   border: 1px solid #ececec;
+
+  &:hover .product__description-wrapper,
+  &:focus .product__description-wrapper {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .product__description-wrapper {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__link {
@@ -39,15 +48,6 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
 }
 
 .product__description {

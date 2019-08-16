@@ -60,6 +60,14 @@
   border-color: rgba($text-color, 0.3);
 }
 
+.form-handwork__radio:disabled + .form-handwork__label {
+  opacity: 0.2;
+}
+
+.form-handwork__radio:disabled + .form-handwork__label:hover::before {
+  border-color: $text-color;
+}
+
 @media (min-width: $tablet-width) {
   .form-handwork__wrapper {
     width: 668px;
